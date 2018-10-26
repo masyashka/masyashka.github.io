@@ -1,0 +1,639 @@
+@font-face {
+	font-family: "MyriadPro-Cond";
+	src: url("../fonts/MyriadPro-Cond.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Rokkitt-Regular";
+	src: url("../fonts/Rokkitt-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Quicksand-Regular";
+	src: url("../fonts/Quicksand-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "MyriadPro-Bold";
+	src: url("../fonts/MyriadPro-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "MyriadPro-Regular";
+	src: url("../fonts/MyriadPro-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+	background: url(../images/background.jpg) no-repeat center top / cover;
+	width: 100%;
+	height: 500px;
+}
+
+.logo {
+	float: left;
+	margin-top: 57px;
+	font-size: 20.31px;
+	font-family: "MyriadPro-Cond";
+	color: white;
+	text-transform: uppercase;
+}
+
+nav {
+	margin-top: 57px;
+	float: right;
+}
+
+.topnav a {
+	font-size: 19.19px;
+	font-family: "MyriadPro-Cond";
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	margin-left: 32px;
+}
+
+.menu_logo {
+	display: none;
+}
+
+.topnav a:hover {
+	color: #1abc9c;
+}
+
+.topnav a:nth-child(2) {
+	padding-bottom: 0px;
+	border-bottom: 1px solid white;
+}
+
+.topnav a:nth-child(2):hover {
+	border-color: #1abc9c;
+}
+
+.text_header {
+	margin-top: 154px;
+	float: left;
+	text-align: center;
+	width: 100%;
+}
+
+.text_header h3 {
+	font-family: "Rokkitt-Regular";
+	font-size: 59.77px;
+	color: white;
+}
+
+.text_header div {
+	position: relative;
+}
+
+.text_header div:before {
+	position: absolute;
+	content: "";
+	border-bottom: 1px solid white;
+	bottom: -10px;
+	width: 60%;
+	left: 20%;
+}
+
+.text_header p {
+	margin-top: 20px;
+	font-family: "Quicksand-Regular";
+	font-size: 22px;
+	color: white;
+	margin-bottom: 130px;
+}
+
+.button_go_ahead {
+	text-decoration: none;
+	color: white;
+	font-size: 24.1px;
+	font-family: "Rokkitt-Regular";
+	text-transform: uppercase;
+	background: #1abc9c;
+	padding: 3px 25px;
+
+	border: 5px solid rgba(26, 188, 156, 0.5);
+
+	-moz-background-clip: border;     
+    -webkit-background-clip: border;  
+    background-clip: border-box;
+
+    -moz-background-clip: padding;     
+    -webkit-background-clip: padding; 
+    background-clip: padding-box;
+}
+
+#introduction_section {
+	width: 100%;
+}
+
+.introduction {
+	width: 78%;
+	margin: 125px auto;
+	text-align: center;
+}
+
+.introduction h2 {
+	font-family: "MyriadPro-Bold";
+	font-size: 36px;
+	color: #1abc9c;
+	text-transform: uppercase;
+}
+
+.introduction p {
+	font-family: "MyriadPro-Regular";
+	color: #95a5a6;
+	font-size: 18px;
+	line-height: 1.9em;
+	margin-top: 55px;
+}
+
+.skills {
+	width: 100%;
+	margin-top: 68px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 73px;
+}
+
+.skill {
+	width: 26.25%;
+	text-align: center;
+}
+
+.skill h1 {
+	margin-top: 30px;
+	color: #1abc9c;
+	font-size: 20px;
+	font-family: "MyriadPro-Bold";
+}
+
+.skill p {
+	margin-top: 35px;
+	color: #95a5a6;
+	font-size: 15px;
+	font-family: "MyriadPro-Regular";
+	line-height: 1.6em;
+}
+
+#portfolio_section {
+	width: 100%;
+}
+
+#portfolio_section .container {
+	border-top: 1px solid #e4e8e8;
+	border-bottom: 1px solid #e4e8e8;
+}
+
+.portfolio {
+	position: relative;
+	width: 100%;
+	margin-top: 75px;
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	height: 100%;
+}
+
+.work {
+	margin-bottom: 55px;
+	width: 41.66666666666667%;
+}
+
+.work img {
+	width: 100%;
+}
+
+.filter {
+	background: #e0b7b5;
+	opacity: 0.5;
+	width: inherit;
+	margin-top: 0px;
+	position: absolute;
+}
+
+.about_work {
+	position: absolute;
+	width: inherit;
+}
+
+.search {
+	position: absolute;
+	margin-top: 5%;
+	margin-left: 77%;
+}
+
+.rectangle {
+	position: absolute;
+	margin-top: 50%;
+	background: #1abc9c;
+	border-top: 6px solid rgba(26, 188, 156, 0.5);
+	width: 100%;
+	padding-left: 18px;
+	box-sizing: border-box;
+	-moz-background-clip: border;     
+    -webkit-background-clip: border;  
+    background-clip: border-box;
+
+    -moz-background-clip: padding;     
+    -webkit-background-clip: padding; 
+    background-clip: padding-box;
+}
+
+.rectangle h1 {
+	margin-top: 15px;
+	color: white;
+	font-family: "Rokkitt-Regular";
+	font-size: 29.96px;
+}
+
+.rectangle p {
+	margin-top: 5px;
+	color: #297465;
+	font-family: "MyriadPro-Regular";
+	font-size: 15.04px;
+}
+
+.about_work {
+	opacity: 0;
+}
+
+.work:hover .filter{
+	display: none;
+}
+
+.work:hover .about_work{
+	opacity: 1;
+}
+
+.button_box {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 70px;
+}
+
+.contact_title h2 {
+	margin-top: 74px;
+	color: #1abc9c;
+	font-size: 59.75px;
+	font-family: "Rokkitt-Regular";
+	text-align: center;
+}
+
+.input_data {
+	width: 100%;
+	margin-top: 75px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 10%;
+	margin-bottom: 175px;
+}
+
+.name, .email, .message {
+	color: #cecece;
+	font-size: 30px;
+	font-family: "Rokkitt-Regular";
+	background: #e4e8e8;
+	margin-bottom: 30px;
+	border: none;
+	box-sizing: border-box;
+	padding-left: 30px;
+}
+
+.name, .email {
+	margin-right: 25px;
+	width: 38.4375%;
+	height: 73px;
+	padding-left: 28px;
+}
+
+.message {
+	padding-top: 30px;
+	width: 79%;
+	height: 250px;
+	padding-left: 28px;
+}
+
+footer {
+	width: 100%;
+	background: #1abc9c;
+	padding-bottom: 70px;
+}
+
+.icons {
+	width: 80.625%;
+	display: flex;
+	margin-left: 90px;
+	justify-content: space-between;
+	margin-left: 9.6875%;
+}
+
+.icons img {
+	margin-top: -30px;
+}
+
+.footer_text {
+	width: 100%;
+	margin-top: 70px;
+}
+
+.footer_text .text_1, .footer_text .text_2 {
+	color: white;
+	font-size: 24.24px;
+	font-family: "Rokkitt-Regular";
+}
+
+.footer_text .text_1 {
+	float: left;
+}
+
+.footer_text .text_2 {
+	float: right;
+}
+
+@media screen and (max-width: 950px) {
+	.portfolio {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+	}
+
+	.work {
+		width: 70%;
+	}
+
+	.input_data {
+		flex-direction: column;
+	}
+	
+	.name, .email {
+		width: 90%;
+		height: 60px;
+	}
+
+	.message {
+		width: 90%;
+		height: 200px;
+	}
+
+	.name, .email, .message {
+		font-size: 24px;
+	}
+
+	.input_data {
+		margin-bottom: 100px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.skills {
+		margin-top: 40px;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.skill {
+		width: 70%;
+		margin-bottom: 40px;
+		margin-left: 15%;
+	}
+	.rectangle h1 {
+		margin-top: 7px;
+		color: white;
+		font-family: "Rokkitt-Regular";
+		font-size: 20px;
+	}
+
+	.rectangle p {
+		margin-top: 5px;
+		color: #297465;
+		font-family: "MyriadPro-Regular";
+		font-size: 12px;
+	}
+
+	.contact_title h2 {
+		margin-top: 40px;
+		font-size: 55px;
+	}
+}
+
+@media screen and (max-width: 772px) {
+	.text_header p {
+		margin-bottom: 65px;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.introduction h2 {
+		font-size: 30px;
+	}
+
+	.introduction p {
+		margin-top: 30px;
+		font-size: 13px;
+	}
+
+	.rectangle h1 {
+		margin-top: 3px;
+		color: white;
+		font-family: "Rokkitt-Regular";
+		font-size: 15px;
+	}
+
+	.rectangle p {
+		margin-top: 0px;
+		color: #297465;
+		font-family: "MyriadPro-Regular";
+		font-size: 8px;
+	}
+
+	.email, .name, .message {
+		font-size: 18px;
+	}
+	
+	.footer_text {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer_text .text_2 {
+		margin-top: 20px;
+	}
+
+	.icons {
+		width: 100%;
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width: 510px) {
+	.topnav a:not(:first-child) {
+		display: none;
+	}
+	
+	.topnav .menu_logo {
+		display: block;
+	}
+
+	.topnav a.menu_logo {
+		float: right;
+		margin-top: -90px;
+	}
+	
+	.topnav a:nth-child(2) {
+		border: none;
+	}
+
+	nav {
+		width: 100%;
+	}
+	
+	.topnav.responsive {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		right: 10px;
+		z-index: 100;
+		float: none;
+	}
+
+	.topnav.responsive a.menu_logo {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	.topnav.responsive a {
+		display: block;
+		float: right;
+		margin-bottom: 20px;
+		right: 0;
+	}
+
+	.text_header h3 {
+		font-size: 30px;
+	}
+
+	.text_header p {
+		font-size: 18px;
+		margin-bottom: 115px;
+	}
+
+	.contact_title h2 {
+		margin-top: 74px;
+		font-size: 40px;
+	}
+
+	.input_data {
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.icons img {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 395px) {
+	.text_header p {
+		margin-bottom: 80px;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.rectangle h1 {
+		margin-top: 3px;
+		color: white;
+		font-family: "Rokkitt-Regular";
+		font-size: 10px;
+	}
+
+	.rectangle p {
+		margin-top: 0px;
+		color: #297465;
+		font-family: "MyriadPro-Regular";
+		font-size: 8px;
+	}
+
+	.rectangle {
+		padding-left: 7px;
+	}
+	
+	.button_view_more img {
+		width: 170px;
+	}
+
+	.portfolio {
+		margin-bottom: 10px;
+	}
+	.contact_title h2 {
+		margin-top: 74px;
+		font-size: 28px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.text_header p {
+		margin-bottom: 55px;
+	}
+}
+
+@media screen and (max-width: 250px) {
+	.text_header h3 {
+		font-size: 20px;
+	}
+
+	.text_header p {
+		font-size: 15px;
+	}
+
+	.introduction h2 {
+		font-size: 20px;
+	}
+
+	.introduction p {
+		font-size: 12px;
+	}
+
+	.name, .email, .message {
+		font-size: 15px;
+		padding-left: 10px;
+	}
+
+	.name, .email {
+		height: 40px;
+	}
+
+	.message {
+		padding-top: 20px;
+	}
+}
