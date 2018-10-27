@@ -1,4 +1,7 @@
-make_equal_heights();
+// make_equal_heights();
+$(document).ready(function() {
+	make_equal_heights();
+});
 
 function make_equal_heights() {
 	remake_rectangle();
