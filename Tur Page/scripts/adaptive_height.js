@@ -1,4 +1,8 @@
-make_equal_heights();
+document.addEventListener('DOMContentLoaded', function() {
+   make_equal_heights();
+}, false);
+
+// make_equal_heights();
 
 function make_equal_heights() {
 	remake_rectangle();
