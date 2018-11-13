@@ -45,20 +45,22 @@ header .navbar {
 	border: 4px solid #000;
 }
 
-.carousel-caption {
+.caption-style {
 	font-family: 'Roboto';
 	font-weight: 300;
 }
 
-.carousel-caption div {
+.caption-style div {
 	margin: 0 auto;
-	width: 700px;
+	width: 700px; /*700px*/
 	background-color: #000;
 	font-size: 48px;
 	margin-bottom: 38px;
+	color: #fff;
+	text-align: center;
 }
 
-.carousel-caption p {
+.caption-style p {
 	color: #000;
 	font-size: 18px;
 	letter-spacing: 3px;
@@ -69,7 +71,7 @@ header .navbar {
 	color: #fff;
 }
 
-#portfolio-section {
+.style-section {
 	background-color: #fafafa;
 	box-shadow: inset 0 0px 0px  0px #333 , inset 0 -15px 15px  -15px #dadada;
 }
@@ -91,7 +93,11 @@ header .navbar {
 
 .column a {
 	position: relative;
-	margin-bottom: 15px;
+	margin-bottom: 34px;
+}
+
+.img__link {
+	box-sizing: border-box;
 }
 
 .img__mask {
@@ -100,7 +106,6 @@ header .navbar {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	width: 106%;
 	background: rgba(0, 0, 0, .5);
 	opacity: 0;
 	font-size: 60px;
@@ -159,4 +164,142 @@ header .navbar {
 
 .footer__text span {
 	color: #000;
+}
+
+/* About us 02*/
+#section-heading-about {
+	background: url(../images/background1.jpg) no-repeat center top / cover;
+}
+
+.wrapper_caption-style {
+	margin-top: 115px;
+	margin-bottom: 82px;
+}
+
+.wrapper_about_text {
+	padding-top: 72px;
+	padding-bottom: 26px;
+}
+
+.title-black {
+	font-family: 'Roboto';
+	font-weight: 300;
+	color: #000;
+	letter-spacing: 8px;
+}
+
+.text-grey {
+	font-family: 'Roboto';
+	font-weight: 400;
+	color: #777777;
+	line-height: 2em;
+	font-size: 14px;
+}
+
+.text-about-us h2, .text-skills h2 {
+	font-size: 18px;
+	margin-top: 19px;
+	margin-bottom: 35px;
+}
+
+.text-about-us {
+	margin-bottom: 26px;
+}
+.box_progress-bar h2 {
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 16px;
+	color: #2f302f;
+	margin-bottom: 15px;
+}
+
+.box_progress-bar {
+	width: 95%;
+	margin-bottom: 20px;
+}
+
+.progress-bar {
+	width: 100%;
+	position: relative;
+	height: 9px;
+	background-color: #ebebeb;
+	box-sizing: border-box;
+}
+
+.progress-bar span {
+	display: block;
+	height: 2px;
+	position: absolute;
+	background-color: #a1a1a1;
+	top: 3.5px;
+	left: 5px;
+}
+
+.progress-bar span:after {
+	content: '';
+	position: absolute;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 4px solid #000;
+	right: -9px;
+	top: -4.5px;
+	box-sizing: border-box;
+}
+
+.wrapper_cards-team {
+	padding-bottom: 76px;
+}
+.wrapper_cards-team .card-title {
+	color: #2f302f;
+	font-size: 24px;
+	font-family: 'Roboto';
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.wrapper_cards-team .card-subtitle {
+	font-size: 12px;
+	color: #777777;
+	font-family: 'Roboto';
+	font-weight: 700;
+	margin-bottom: 18px;
+}
+
+@media (max-width: 992px) {
+	.columns {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.nav-item {
+		display: flex;
+		justify-content: center;
+	}
+	.d-n {
+		display: none;
+	}
+	.carousel-caption div { /* carousel-caption */
+		font-size: 24px;
+		margin-bottom: 10px;
+		width: 95%;
+	}
+	.carousel-caption p {
+		font-size: 10px;
+	}
+}
+
+.wrapper_text-team {
+	margin-top: 72px;
+	margin-bottom: 62px;
+}
+@media (max-width: 568px) {
+	.carousel-indicators {
+		display: none;
+	}
+	.carousel-caption {
+		bottom: 0;
+	}
+	.carousel-caption div {
+		font-size: 20px;
+	}
 }
